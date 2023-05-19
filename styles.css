@@ -115,3 +115,32 @@ nav ul li{
     color: #fff;
     font-size: 40px;
 }
+
+/* ------------------------------------------------------- */
+/* Feature page styles */
+#feature main {
+    padding-top: 20px;
+}
+main iframe {
+    aspect-ratio: 16 / 9;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+#feature header {
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#feature header h1 {
+    margin: 0 0 .5em 0;
+}
+
+#feature section {
+    padding: 20px;
+    margin: auto;
+    max-width: 550px;
+}
