@@ -166,3 +166,9 @@ main iframe {
     margin: 0 auto;
     line-height: 66%;
 }
+/* ------------------------------------------------------- */
+/* ROADMAP section */
+#roadmap h4{
+    font-size: 20px;
+    font-weight: 700;
+}
