@@ -33,6 +33,7 @@ header{
     justify-content: space-between;
     height: 110px;
     padding: 0 3%;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
 }
 header h1{
     font-size: 50px;
@@ -56,12 +57,15 @@ nav{
     background-color: #F3B1DB;
 }
 nav ul li{
-    list-style-type: none;
     text-align: center;
+}
+nav ul li a, nav ul li a:link, nav ul li a:visited{
+    list-style-type: none;
     font-size: 64px;
     font-weight: 700;
     color: #fff;
     text-shadow: -2px 2px 4px #000, 2px 2px 4px #000, 2px -2px 4px #000, -2px -2px 4px #000;
+    text-decoration: none;
 }
 /* ------------------------------------------------------- */
 /* section header */
@@ -79,46 +83,67 @@ nav ul li{
 /* PROJECT section */
 /* PROJECT section "context" */
 #context{
-    background-color:bisque;
-    width: 400px;
-    margin: auto;
-    padding: 0 6%;
+    max-width: 450px;
+    margin: 5% auto;
     box-sizing: border-box;
-    margin-top: 9%;
+    position: relative;
+}
+#context > div{
+    background-image: url(images/pWindow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
 }
 #context > h3{
     font-size: 48px;
     font-weight: 700;
     margin: 0;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    max-width: 350px;
 }
 #context > p{
     font-size: 24px;
+    position: absolute;
+    left: 40px;
+    top: 85px;
+    max-width: 350px;
 }
 /* PROJECT section "student work" */
-.student > h3{
+.student > div > h3{
     font-size: 40px;
     font-weight: 700;
+    width: 240px;
+}
+.student > div:first-of-type{
+    display: flex;
     background-color: #fff;
     margin: 0;
-    padding-left: 6%;
+    align-items: center;
+    justify-content: space-around;
 }
-.student > div{
+.student > div:first-of-type > img{
+    padding: 20px;
+}
+.student > .desc{
     background-color: #FFC9C9;
     height: 200px;
     padding: 3%;
 }
-.student > div > p{
-    margin: 0 0 2% 0;
+.student > .desc > p{
+    margin: 0 0 3% 3%;
     font-size: 20px;
 }
-.student > div > button{
+.student > .desc > button{
     background-color: #CF49AA;
     border: none;
     border-radius: 10px;
     color: #fff;
     font-size: 40px;
+    padding: 4px 16px;
+    margin-left: 3%;
 }
-
 /* ------------------------------------------------------- */
 /* Feature page styles */
 #feature main {
@@ -152,19 +177,31 @@ main iframe {
 /* ------------------------------------------------------- */
 /* ABOUT-US section */
 #about article{
-    width: 400px;
-    margin: 0 auto;
+    margin: 2% 4% 0 4%;
+    position: relative;
 }
 #about article p{
     font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    max-width: 400px;
 }
 #about h3{
     font-weight: 700;
     font-size: 48px;
     text-align: center;
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto 4% auto;
     line-height: 66%;
+}
+/* ABOUT interest section */
+#about article div{
+    background-image: url(images/interested.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
 }
 /* ------------------------------------------------------- */
 /* ROADMAP section */

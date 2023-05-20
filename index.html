@@ -41,9 +41,9 @@
         <nav>
             <ul>
                 <li><a>Home</a><span></span></li>
-                <li><a>Projects</a><span></span></li>
-                <li><a>About Us</a><span></span></li>
-                <li><a>Roadmap</a><span></span></li>
+                <li><a href="#projects">Projects</a><span></span></li>
+                <li><a href="#about">About</a><span></span></li>
+                <li><a href="#roadmap">Roadmap</a><span></span></li>
                 <li><a>Credits</a><span></span></li>
                 <!-- the credits will be done last.. focus on everything else for now. span has id; class of current, bg image gets loaded -->
             </ul>
@@ -56,15 +56,19 @@
             </div>
 
             <article id="context">
+                <div></div>
                 <h3>What's going on?</h3>
-                <p>Every year, the students of 157A and 157B make portal pages linking to their works. Check &lsquo;em out!</p>
+                <p>Every year, the students of 157A and 157B make portal pages linking to their works. Check &lsquo;em out! Note: These are best viewed on desktop.</p>
                 <!-- article to look like windows window..through bg image in css -->
             </article>
 
             <article class="student">
-                <h3>Student 1 - Project Name</h3>
                 <div>
-                    <p>brief description here</p>
+                    <h3>The Crafty Cauldron</h3>
+                    <img src="images/down_arrow.svg" width="20">
+                </div>
+                <div class="desc">
+                    <p>This cool madlibs website by Brandish Couch allows you create a potion recipe for best buddy or worst enemy.</p>
                     <button>Enter Site</button>
                 </div>
                 <!-- each of these articles will be collapsible. -->
@@ -72,31 +76,58 @@
             </article>
 
             <article class="student">
-                <h3>Student 2</h3>
                 <div>
-                    <p>brief description here</p>
+                    <h3>Plant Parenthood</h3>
+                    <img src="images/down_arrow.svg" width="20">
+                </div>
+                <div class="desc">
+                    <p>In Emily Wen's fun plant care game, you need to make sure that you can keep a friend's plant alive with food, water, and sunlight.</p>
                     <button>Enter Site</button>
                 </div>
             </article>
 
             <article class="student">
-                <h3>Student 3</h3>
                 <div>
-                    <p>brief description here</p>
+                    <h3>Keychain City</h3>
+                    <img src="images/down_arrow.svg" width="20">
+                </div>
+                <div class="desc">
+                    <p>Jenny Wong's interactive narrative gives us a peak into her keychain collection, featuring a rotating 3D stand.</p>
                     <button>Enter Site</button>
                 </div>
             </article>
 
-            <img src="images/llama, moon, stars.svg">
-            <!-- show emily/alex how to properly export svg...this is a CURSE -->
+            <article class="student">
+                <div>
+                    <h3>Then&Now</h3>
+                    <img src="images/down_arrow.svg" width="20">
+                </div>
+                <div class="desc">
+                    <p>An introspective website, Anthony Chow asks you leave a message for the you of 5 years ago. </p>
+                    <button>Enter Site</button>
+                </div>
+            </article>
+
+            <article class="student">
+                <div>
+                    <h3>Construct of Race</h3>
+                    <img src="images/down_arrow.svg" width="20">
+                </div>
+                <div class="desc">
+                    <p>Mahima Kale gives us a website that asks us to think about race, racism, and how it is tied to the history of America.</p>
+                    <button>Enter Site</button>
+                </div>
+            </article>
+
         </section>
 
         <section id="about">
             <div>
-                <h1>About Us</h1>
+                <h1>About</h1>
             </div>
 
             <article>
+                <div></div>
                 <p>Are you interested in styling and coding websites? UC Davis offers a variety of courses pertaining to the fundamentals of UI UX and interactive media. </p>
                 <!-- article to look like windows window..through bg image in css -->
             </article>
@@ -106,23 +137,19 @@
             <!-- Flexslider -->
             <div class="flexslider">
                 <ul class="slides">
-                  <li><blockquote>Testimonial Info In here Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ipsam! Veniam ducimus in pariatur. Ipsum, natus, vitae delectus consectetur maiores cumque quasi, est molestias asperiores earum accusantium odit quam ratione!</blockquote></li>
+                    <li><img src="images/pLlama.svg" width="100"><blockquote>DES117 and DES157A have been two of my favorite courses at UC Davis. I enjoy being able to learn practical skills and apply them to create products that I can call my own.</blockquote></li>
                   
-                  <li><blockquote>Testimonial Info In here Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, maxime optio earum natus quisquam cupiditate adipisci cum officiis itaque, omnis, nihil labore necessitatibus atque enim.</blockquote></li>
+                    <li><blockquote>This was a great class, I learned a lot and the assignments directly affected what we were learning and also gave me pieces to put in my portfolio and keep working on to improve.</blockquote></li>
 
-                  <li><blockquote>Testimonial Info In here Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, maxime optio earum natus quisquam cupiditate adipisci cum officiis itaque, omnis, nihil labore necessitatibus atque enim.</blockquote></li>
+                    <li><blockquote>I wish there were more classes on front end coding! I learned so much and the knowledge I obtained is applicable for my desired future career.</blockquote></li>
 
-                  <li><blockquote>Testimonial Info In here Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, maxime optio earum natus quisquam cupiditate adipisci cum officiis itaque, omnis, nihil labore necessitatibus atque enim.</blockquote></li>
+                    <li><blockquote>Although I came in with a little web design experience, this course taught me a lot beyond what I already knew. I truly enjoyed this class and was able to come up with some great personal project ideas. I would definitely recommend this class to anyone who wants to pursue a career in web design.</blockquote></li>
+
+                    <li><blockquote>I absolutely love this class! This is probably my favorite class so far! I love how this class values flexibility and creative freedom by letting us choose our topic for each project. This class made me love front-end web development more and I hope to continue on with that path. I learned tons of technical, design and soft skills that are also transferrable. </blockquote></li>
+
+                    <li><blockquote>I took this class as a "fun" elective, not realizing the intensity and challenge of the course. However, I don't regret it one bit because I learned so much and challenged myself to step outside my comfort zone by diving into a more advanced coding class. Overall I enjoyed this class and loved being able to find my way through challenges in this course. </blockquote></li>
                 </ul>
               </div>
-
-            <div>
-                <img>
-                <!-- the imgs will be the llama icons -->
-                <p>“I wish they&rsquo;re more classes on front end coding because the knowledge I obtained is applicable for my career.”</p>
-                <!-- insert the window as a bg image on the div -->
-            </div>
-            <!-- ask emily what the scroll/status bar is supposed to be -->
         </section>
 
         <section id="roadmap">
