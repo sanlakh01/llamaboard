@@ -12,7 +12,7 @@
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
-@font-face {
+ @font-face {
   font-family: 'flexslider-icon';
   src: url('fonts/flexslider-icon.eot');
   src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
@@ -74,8 +74,8 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background-image: url(images/Ywindow.svg);
-  background-repeat: no-repeat;
+  background: #fff;
+  border: 4px solid #fff;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -89,17 +89,9 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides {
   zoom: 1;
 }
-.flexslider .slides li img {
-  display: block;
-  width: 100px;
-  margin: auto;
-  margin-top: 2%;
-}
-.flexslider .slides li blockquote{
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  max-width: 300px;
-  margin: auto;
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
 }
 .flex-viewport {
   max-height: 2000px;
@@ -130,7 +122,7 @@ html[xmlns] .flexslider .slides {
   height: 40px;
   margin: -20px 0 0;
   position: absolute;
-  top: 120%;
+  top: 50%;
   z-index: 10;
   overflow: hidden;
   opacity: 0;

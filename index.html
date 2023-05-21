@@ -32,91 +32,119 @@
 </head>
 <body>
     <header>
-        <button><img src="images/hamburger.svg" alt="hamburger icon" width="40"></button>
+        <!-- <button><img src="images/hamburger.svg" alt="hamburger icon" width="40"></button> 
+        Hiding the nav for now. We can implement when we have time
+        -->
         <!-- hamburger menu here -->
         <h1>that website class</h1>
     </header>
 
     <main>
-        <nav>
+        <!-- I am turnin off the navigation for now. If we get the hamburger menu working that is fine, but otherwise people can just scroll -Bill -->
+        <!-- <nav>
             <ul>
                 <li><a>Home</a><span></span></li>
                 <li><a href="#projects">Projects</a><span></span></li>
                 <li><a href="#about">About</a><span></span></li>
                 <li><a href="#roadmap">Roadmap</a><span></span></li>
                 <li><a>Credits</a><span></span></li>
-                <!-- the credits will be done last.. focus on everything else for now. span has id; class of current, bg image gets loaded -->
+                <!-- the credits will be done last.. focus on everything else for now. span has id; class of current, bg image gets loaded
             </ul>
-        </nav>
+        </nav> -->
 
         <section id="projects">
-            <div>
-                <h1>Projects</h1>
-                <!-- the llama drinking boba will be bg image in css   -->
+            <div id="header">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <img src="images/llama-boba.svg" id="header-llama">
+                    <img src="images/eye.svg" id="header-eye">
+                    <img src="images/mail.svg" id="header-mail">
+                    <img src="images/heart.svg" id="header-heart">
+                    <img src="images/star.svg" id="header-star">
+                    <img src="images/star.svg" id="header-star2">
+                    <img src="images/star.svg" id="header-star3">
+                </div>
             </div>
 
             <article id="context">
-                <div></div>
-                <h3>What's going on?</h3>
-                <p>Every year, the students of 157A and 157B make portal pages linking to their works. Check &lsquo;em out! Note: These are best viewed on desktop.</p>
+                <div>
+                    <h3>What's going on?</h3>
+                    <p>Every year, the students of 157A and 157B make portal pages linking to their works. Check &lsquo;em out! Note: These are best viewed on desktop.</p>
                 <!-- article to look like windows window..through bg image in css -->
+                </div>
             </article>
 
             <article class="student">
-                <div>
+                <header>
                     <h3>The Crafty Cauldron</h3>
-                    <img src="images/down_arrow.svg" width="20">
-                </div>
-                <div class="desc">
-                    <p>This cool madlibs website by Brandish Couch allows you create a potion recipe for best buddy or worst enemy.</p>
-                    <button>Enter Site</button>
-                </div>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/crafty-cauldron.gif" alt="screenshot of crafty cauldron website">
+                    <div>
+                        <p>This cool madlibs website by Brandish Couch allows you create a potion recipe for best buddy or worst enemy.</p>
+                        <p>Project best viewed on desktop.</p>
+                        <a href="projects/des157a-brandish-couch-madlibs" class="button">View Project</a>
+                    </div>
+                </section>
                 <!-- each of these articles will be collapsible. -->
                 <!-- ask bill - should the picture of the student work be loaded in the bg? -->
             </article>
 
             <article class="student">
-                <div>
+                <header>
                     <h3>Plant Parenthood</h3>
-                    <img src="images/down_arrow.svg" width="20">
-                </div>
-                <div class="desc">
-                    <p>In Emily Wen's fun plant care game, you need to make sure that you can keep a friend's plant alive with food, water, and sunlight.</p>
-                    <button>Enter Site</button>
-                </div>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/plant-parenthood-screenshot.png" alt="Plant parenthood screenshot" alt="screenshot of crafty cauldron website">
+                    <div>
+                        <p>In Emily Wen's fun plant care game, you need to make sure that you can keep a friend's plant alive with food, water, and sunlight.</p>
+                        <a href="projects/des157a-emily-wen-finalproject" class="button">View Project</a>
+                    </div>
+                </section>
             </article>
 
             <article class="student">
-                <div>
+                <header>
                     <h3>Keychain City</h3>
-                    <img src="images/down_arrow.svg" width="20">
-                </div>
-                <div class="desc">
-                    <p>Jenny Wong's interactive narrative gives us a peak into her keychain collection, featuring a rotating 3D stand.</p>
-                    <button>Enter Site</button>
-                </div>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/keychain.png" alt="screenshot of keychain">
+                    <div>
+                        <p>Jenny Wong's interactive narrative gives us a peak into her keychain collection, featuring a rotating 3D stand.</p>
+                        <a href="projects/des157a-jenny-wong-finalproject" class="button">View Project</a>
+                    </div>
+                </section>
             </article>
 
             <article class="student">
-                <div>
+                <header>
                     <h3>Then&Now</h3>
-                    <img src="images/down_arrow.svg" width="20">
-                </div>
-                <div class="desc">
-                    <p>An introspective website, Anthony Chow asks you leave a message for the you of 5 years ago. </p>
-                    <button>Enter Site</button>
-                </div>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/then-now.png" alt="screenshot of then and now">
+                    <div>
+                        <p>An introspective website, Anthony Chow asks you leave a message for the you of 5 years ago. </p>
+                        <a href="projects/des157b-anthony-chow-final" class="button">View Project</a>
+                    </div>
+                </section>
             </article>
 
             <article class="student">
-                <div>
+                <header>
                     <h3>Construct of Race</h3>
-                    <img src="images/down_arrow.svg" width="20">
-                </div>
-                <div class="desc">
-                    <p>Mahima Kale gives us a website that asks us to think about race, racism, and how it is tied to the history of America.</p>
-                    <button>Enter Site</button>
-                </div>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/race.gif" alt="animated gif of race project">
+                    <div>
+                        <p>Mahima Kale gives us a website that asks us to think about race, racism, and how it is tied to the history of America.</p>
+                        <a href="projects/des157b-mahima-kale-final" class="button">View Project</a>
+                    </div>
+                </section>
             </article>
 
         </section>
@@ -137,17 +165,64 @@
             <!-- Flexslider -->
             <div class="flexslider">
                 <ul class="slides">
-                    <li><img src="images/pLlama.svg" width="100"><blockquote>DES117 and DES157A have been two of my favorite courses at UC Davis. I enjoy being able to learn practical skills and apply them to create products that I can call my own.</blockquote></li>
-                  
-                    <li><blockquote>This was a great class, I learned a lot and the assignments directly affected what we were learning and also gave me pieces to put in my portfolio and keep working on to improve.</blockquote></li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>DES117 and DES157A have been two of my favorite courses at UC Davis. I enjoy being able to learn practical skills and apply them to create products that I can call my own.</blockquote>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>This was a great class, I learned a lot and the assignments directly affected what we were learning and also gave me pieces to put in my portfolio and keep working on to improve.</blockquote>
+                            </div>
+                        </article>
+                    </li>
 
-                    <li><blockquote>I wish there were more classes on front end coding! I learned so much and the knowledge I obtained is applicable for my desired future career.</blockquote></li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I wish there were more classes on front end coding! I learned so much and the knowledge I obtained is applicable for my desired future career.</blockquote>
+                            </div>
+                        </article>
+                    </li>
 
-                    <li><blockquote>Although I came in with a little web design experience, this course taught me a lot beyond what I already knew. I truly enjoyed this class and was able to come up with some great personal project ideas. I would definitely recommend this class to anyone who wants to pursue a career in web design.</blockquote></li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>Although I came in with a little web design experience, this course taught me a lot beyond what I already knew. I truly enjoyed this class and was able to come up with some great personal project ideas. I would definitely recommend this class to anyone who wants to pursue a career in web design.</blockquote>
+                            </div>
+                        </article>
+                    </li>
 
-                    <li><blockquote>I absolutely love this class! This is probably my favorite class so far! I love how this class values flexibility and creative freedom by letting us choose our topic for each project. This class made me love front-end web development more and I hope to continue on with that path. I learned tons of technical, design and soft skills that are also transferrable. </blockquote></li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I absolutely love this class! This is probably my favorite class so far! I love how this class values flexibility and creative freedom by letting us choose our topic for each project. This class made me love front-end web development more and I hope to continue on with that path. I learned tons of technical, design and soft skills that are also transferrable. </blockquote>
+                            </div>
+                        </article>
+                    </li>
 
-                    <li><blockquote>I took this class as a "fun" elective, not realizing the intensity and challenge of the course. However, I don't regret it one bit because I learned so much and challenged myself to step outside my comfort zone by diving into a more advanced coding class. Overall I enjoyed this class and loved being able to find my way through challenges in this course. </blockquote></li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I took this class as a "fun" elective, not realizing the intensity and challenge of the course. However, I don't regret it one bit because I learned so much and challenged myself to step outside my comfort zone by diving into a more advanced coding class. Overall I enjoyed this class and loved being able to find my way through challenges in this course. </blockquote>
+                            </div>
+                        </article>
+                    </li>
                 </ul>
               </div>
         </section>
@@ -160,13 +235,22 @@
             <!-- the clouds and the trans rainbow -->
             <!-- the entire section will have the gradient background -->
         </section>
+        <div id="bottom-illustration">
+            <img src="images/llama-moon.svg" id="llama-moon">
+            <img src="images/pink-cloud1.svg" id="pink-cloud1">
+            <img src="images/pink-cloud2.svg" id="pink-cloud2">
+        </div>
     </main>
 
     <footer>
-        <h2>Join Us Today!</h2>
-        <button><img></button>
-        <!-- exit button here? -->
-        <!-- need to ask emily/alex + bill the necessity of this... -->
+        <div class="container">
+            <h2>Come Interact with Us!</h2>
+            <img src="images/bill-llama.svg" id="footer-bill-llama">
+            <img src="images/glenda-llama.svg" id="footer-glenda-llama">
+            <img src="images/eyeball.svg" id="footer-eye">
+            <img src="images/envelope-kiss.svg" id="footer-envelope">
+            <img src="images/star.svg" id="footer-star">
+        </div>
     </footer>
 </body>
 </html>
