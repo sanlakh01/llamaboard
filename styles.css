@@ -312,18 +312,18 @@ main iframe {
 }
 /* ------------------------------------------------------- */
 /* ABOUT-US section */
-#about > article{
+/* #about > article{
     margin: 2% 4% 0 4%;
     position: relative;
-}
-#about > article > p{
+} */
+/* #about > article > p{
     font-size: 24px;
     margin: 0;
     position: absolute;
     top: 160px;
     left: 50px;
     max-width: 400px;
-}
+} */
 #about h3{
     font-weight: 700;
     font-size: 48px;
@@ -333,11 +333,51 @@ main iframe {
     line-height: 66%;
 }
 /* ABOUT interest section */
-#about > article > div{
+/* #about > article > div{
     background-image: url(images/interested.svg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 500px;
+} */
+
+#about-window {
+    max-width: 450px;
+    font-size: 1.5em;
+    margin: 2% 4% 100px 4%;
+    position: relative;
+}
+
+#about-window header {
+    border: 8px solid black;
+    aspect-ratio: 8/1;
+    border-radius: 15px 15px 0 0;
+    background-image:url(images/interface.svg), linear-gradient(180deg, rgba(56,164,173,1) 0%, rgba(230,230,230,1) 100%);
+    background-position: right center, left top;
+    background-repeat:  no-repeat, repeat;
+    background-size: 20%, cover ;
+}
+
+#about #rainbow {
+    position: absolute;
+    width:35%;
+    top: -15%;
+    left: 5%;
+}
+
+#about #cloud-rain {
+    position: absolute;
+    width:25%;
+    bottom: -15%;
+    right: 5%;
+}
+
+#about-window div {
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: #d8d8d8;
 }
 /* ------------------------------------------------------- */
 /* Flexslider section */
