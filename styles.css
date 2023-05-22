@@ -284,6 +284,7 @@ nav ul li a, nav ul li a:link, nav ul li a:visited{
 /* Feature page styles */
 #feature main {
     padding-top: 20px;
+   
 }
 main iframe {
     aspect-ratio: 16 / 9;
@@ -304,11 +305,14 @@ main iframe {
 }
 
 #feature section {
-    padding: 20px;
     margin: auto;
     max-width: 550px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 30px;
+}
+
+#feature #clouds {
+    margin: 0;
+    max-width: 100%;
 }
 /* ------------------------------------------------------- */
 /* ABOUT-US section */
@@ -468,7 +472,7 @@ main iframe {
 }
 /* ------------------------------------------------------- */
 /* FOOTER section */
-footer{
+footer section{
     background-color: #4FB5FF;
     background-image: url(images/blue-clouds.svg);
     background-position: center bottom;
@@ -480,6 +484,27 @@ footer h2{
     font-size: 10vw;
     color: #fff;
     text-align: center;
+}
+
+footer article {
+    padding: 30px 20px;
+    background-color: #7a0d5b;
+    color: #ececec;
+}
+
+footer article div {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer article p {
+    font-size: .8em;
+}
+
+footer article a {
+    color:#A3D9F6;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #footer-bill-llama, #footer-glenda-llama, #footer-eye, #footer-envelope, #footer-star {
@@ -537,6 +562,19 @@ footer h2{
 
     footer h2{
         font-size: 80px;
+    }
+
+    footer article div {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer article div p {
+        flex: 1;
+    }
+
+    #feature header h1 {
+        margin-bottom: 0;
     }
 
 }
